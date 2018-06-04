@@ -30,7 +30,7 @@ def convert(fname, pages=None):
    
 #converts all pdfs in directory pdfDir, saves all resulting txt files to txtdir
 def convertMultiple(pdfDir, txtDir):
-    if pdfDir == "": pdfDir = os.getcwd() + "\\" #if no pdfDir passed in 
+    if pdfDir == "": pdfDir = os.getcwd() + "/" #if no pdfDir passed in 
     for pdf in os.listdir(pdfDir): #iterate through pdfs in pdf directory
         fileExtension = pdf.split(".")[-1]
         if fileExtension == "pdf":
